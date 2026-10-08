@@ -10,29 +10,7 @@
     </NuxtLink>
   </DefineTemplate>
 
-  <div class="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
-    <div class="hidden border-r bg-muted/40 md:block">
-      <div class="flex h-full max-h-screen flex-col gap-2">
-        <div class="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
-          <a href="/" class="flex items-center gap-2 font-semibold">
-            <Icon name="lucide:monitor" size="24" />
-            <span class=""><!-- 在这里填入项目名称 --></span>
-          </a>
-          <Button variant="outline" size="icon" class="ml-auto h-8 w-8">
-            <Bell class="h-4 w-4" />
-            <span class="sr-only">展开通知列表</span>
-          </Button>
-        </div>
-        <div class="flex-1">
-          <nav class="grid items-start px-2 text-sm font-medium lg:px-4">
-            <!-- 下面还有一处一模一样的导航栏代码，修改导航栏内容时记得把两处都改了，而且内容需要一致 -->
-            <ReuseTemplate icon="lucide:home" name="主页" path="/" />
-            <ReuseTemplate icon="lucide:monitor" name="子页面1" path="/device" />
-            <ReuseTemplate icon="lucide:upload" name="子页面2" path="/content/create" />
-          </nav>
-        </div>
-      </div>
-    </div>
+  <div class="flex min-h-screen w-full flex-col">
     <div class="flex flex-col">
       <header class="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
         <Sheet>
@@ -62,6 +40,10 @@
             </nav>
           </SheetContent>
         </Sheet>
+        <a href="/" class="flex items-center gap-2 font-semibold">
+          <Icon name="lucide:monitor" size="24" />
+          <span class=""><!-- 在这里填入项目名称 --></span>
+        </a>
         <div class="w-full flex-1" />
         <DarkToggle />
         <ClientOnly>
