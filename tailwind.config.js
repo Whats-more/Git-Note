@@ -1,5 +1,6 @@
 const animate = require('tailwindcss-animate');
 const { addDynamicIconSelectors } = require('@iconify/tailwind');
+const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -81,10 +82,35 @@ module.exports = {
         'collapsible-down': 'collapsible-down 0.2s ease-in-out',
         'collapsible-up': 'collapsible-up 0.2s ease-in-out',
       },
+      fontFamily: {
+        segoe: [
+          '"Segoe UI Variable Text"',
+          '"Segoe UI"',              
+          'system-ui',               
+          '-apple-system',
+          'sans-serif'
+        ],
+      },
+      maxWidth: {
+        'reading': '637px',
+      }
     },
   },
   plugins: [
     animate,
     addDynamicIconSelectors(),
-  ],
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.text-autospace': {
+          'text-autospace': 'normal',
+        },
+        '.text-autospace-no': {
+          'text-autospace': 'no-autospace',
+        },
+        '.markdown-body': {
+          'font-family': '"Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif'
+        }
+      })
+    })
+  ]
 };
