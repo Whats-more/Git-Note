@@ -1,7 +1,7 @@
 <template>
     <Card @mouseenter="isHovered = true" @mouseleave="isHovered = false" @click="isActive = !isActive" :class="{ 'border-primary': isHovered }" class="w-full h-auto max-h-60 flex flex-col cursor-pointer">
         <template v-if="props.containsArgument">
-            <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardHeader class="flex flex-row items-center justify-between space-y-0">
                 <CardTitle class="text-2xl font-bold">
                 Case A
                 </CardTitle>
@@ -18,7 +18,7 @@
             </CardContent>
         </template>
         <template v-else>
-            <CardHeader class="flex flex-row items-center justify-center space-y-0 pb-2">
+            <CardHeader class="flex flex-row items-center justify-start space-y-0">
                 <CardTitle class="text-2xl font-bold">
                 Case B
                 </CardTitle>
