@@ -79,7 +79,7 @@
 </template>
 
 <script setup lang="ts">
-import { Bell, CircleUser, Menu } from 'lucide-vue-next';
+import { CircleUser, Menu } from 'lucide-vue-next';
 import { createReusableTemplate } from '@vueuse/core';
 import { toast } from 'vue-sonner';
 
