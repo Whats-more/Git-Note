@@ -11,7 +11,7 @@
     <article class="markdown-body">
       
       <!-- H1 标题：约 2.5rem，上下边距使用 32px (mt-8) 和 16px (mb-4) -->
-      <Title class="mt-0 mb-6">Reading width</Title>
+      <h1 class="text-3xl text-gray-900 mt-0 mb-6">Reading width</h1>
 
       <!-- 正文段落：16px 字号，1.625 行高，段间距 16px -->
       <p class="text-base leading-relaxed text-gray-700 mb-4">
@@ -24,13 +24,13 @@
 
 
       <!-- H2 标题：约 1.5rem，上边距 32px (mt-8)，下边距 16px (mb-4) -->
-      <Title class="mt-8 mb-4">Usage</Title>
+      <h1 class="text-3xl text-gray-900 mt-8 mb-4">Usage</h1>
 
       <p class="text-base leading-relaxed text-gray-700 mb-4">
         Use <code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-pink-600">.reading-width</code> within a container that is centered in the viewport or a parent element...
       </p>
 
-      <Title class="mt-8 mb-4">Recommended implementation</Title>
+      <h1 class="text-3xl text-gray-900 mt-8 mb-4">Recommended implementation</h1>
 
       <p class="text-base leading-relaxed text-gray-700 mb-4">
         Use <code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-pink-600">.reading-width</code> within a container that is centered in the viewport or a parent element. Pair it with <code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-pink-600">.margin-inline-auto</code> to automatically center the content horizontally. If used in a grid, ensure the grid column containing the <code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-pink-600">.reading-width</code> container uses the <code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-pink-600">minmax</code> function...
@@ -41,7 +41,6 @@
 </template>
 
 <script setup>
-import Title from './UI/Title.vue';
 
 // 这里可以处理代码高亮逻辑或从接口获取内容
 </script>

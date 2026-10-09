@@ -1,7 +1,7 @@
 <template>
   <Title>PlaceHolder</Title>
   <div class="text-center text-3xl markdown-body mt-3.5 -mb-0.5">
-    Custom Title
+    <MarkdownTitle>Custom Title</MarkdownTitle>
   </div>
   <Separator class="w-full bg-gray-300 h-[1px]" />
   <div class="grid grid-cols-[1fr_auto_1fr] gap-4">
@@ -22,4 +22,5 @@
 // import NewCard from '~/components/custom/NewCard.vue';
 import ArgumentCard from '~/components/custom/ArgumentCard.vue';
 import ArgumentCardSample from '~/components/custom/ArgumentCardSample.vue';
+import MarkdownTitle from '~/components/custom/UI/MarkdownTitle.vue';
 </script>
