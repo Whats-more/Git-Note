@@ -12,34 +12,7 @@
 
   <div class="flex min-h-screen w-full flex-col">
     <div class="flex flex-col">
-      <header class="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
-        <Sheet>
-          <SheetTrigger as-child>
-            <Button
-              variant="outline"
-              size="icon"
-              class="shrink-0 md:hidden"
-            >
-              <Menu class="h-5 w-5" />
-              <span class="sr-only">打开导航栏</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left" class="flex flex-col">
-            <nav class="grid gap-2 text-lg font-medium">
-              <a
-                href="#"
-                class="flex items-center gap-2 text-lg font-semibold mb-3"
-              >
-                <Icon name="lucide:monitor" size="24" />
-                <span class="sr-only">食堂显示屏</span>
-              </a>
-              <!-- 上面还有一处一模一样的导航栏代码，修改导航栏内容时记得把两处都改了，而且内容需要一致 -->
-              <ReuseTemplate icon="lucide:home" name="主页" path="/" />
-              <ReuseTemplate icon="lucide:monitor" name="子页面1" path="/device" />
-              <ReuseTemplate icon="lucide:upload" name="子页面2" path="/content/create" />
-            </nav>
-          </SheetContent>
-        </Sheet>
+      <header class="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px]">
         <a href="/" class="flex items-center gap-2 font-semibold">
           <Icon name="lucide:monitor" size="24" />
           <span class=""><!-- 在这里填入项目名称 --></span>
@@ -71,7 +44,7 @@
           </Button>
         </ClientOnly>
       </header>
-      <main class="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+      <main class="flex flex-1 flex-col gap-4 p-4 lg:p-6">
         <slot />
       </main>
     </div>
